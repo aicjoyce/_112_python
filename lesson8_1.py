@@ -13,4 +13,5 @@ else:
 
 dataFrame = pd.DataFrame(data=all_data,columns=['sna','tot','sbi','sarea','mday','ar','bemp','act'])
 mask = dataFrame['sbi'] <= 3
-print(dataFrame[mask])
+mask_dataFrame = dataFrame[mask]
+mask_dataFrame.to_excel('可借小於3的站點.xlsx')
