@@ -6,6 +6,7 @@ student_dataFrame = pd.DataFrame(data=scores_array,
              columns=["國文","英文","數學","地理","社會"],
              index=range(1,51))
 
+
 st.header("3年5班成績表")
 #st.table(data=student_dataFrame)
 st.dataframe(data=student_dataFrame)
